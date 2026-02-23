@@ -1,0 +1,19 @@
+# Golan
+bin/
+*.exe
+*.test
+*.out
+
+# Data
+data/*.json
+
+# Env
+.Env
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# OS
+.DS_Store
