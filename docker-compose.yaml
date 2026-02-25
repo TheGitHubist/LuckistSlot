@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  luckistslot:
+    build: .
+    container_name: luckistslot
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./data:/app/data
