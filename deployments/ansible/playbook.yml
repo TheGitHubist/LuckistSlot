@@ -1,0 +1,16 @@
+- name: Configure LuckyOps server
+  hosts: servers
+  become: true
+
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: true
+
+    - name: Start Docker
+      service:
+        name: docker
+        state: started
+        enabled: true
